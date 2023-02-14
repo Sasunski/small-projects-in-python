@@ -1,3 +1,4 @@
-#In this file, I describe each problem against its file name 
-#Salaries Differences: Write a query that calculates the difference between the highest salaries found in the marketing and engineering departments. Output just the absolute difference in salaries.
+#In this file, I describe each problem against its file name. If the task uses several tables, then I mark them with a description.
+#Salaries Differences: Write a query that calculates the difference between the highest salaries found in the marketing and engineering departments. Output just the absolute difference in salaries. Here we have 2 files:db_employee(id:int, first_name:varchar, last_name:varchar, salary:int, department_id:int) and db_dept(id:int, department:varchar)
 #Finding Updated Records: We have a table with employees and their salaries, however, some of the records are old and contain outdated salary information. Find the current salary of each employee assuming that salaries increase each year. Output their id, first name, last name, department ID, and current salary. Order your list by employee ID in ascending order.
+#Bikes Last Used: Find the last time each bike was in use. Output both the bike number and the date-timestamp of the bike's last use (i.e., the date-time the bike was returned). Order the results by bikes that were most recently used. 
