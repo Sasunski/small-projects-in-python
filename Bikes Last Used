@@ -1,0 +1,10 @@
+# Import your libraries
+import pandas as pd
+
+# Start writing code
+dc_bikeshare_q1_2012.head()
+a = dc_bikeshare_q1_2012[['bike_number', 'end_time']]
+a.rename(columns = {'end_time':'last_used'}, inplace = True)
+a = a.sort_values('last_used', ascending = False)
+a = a.drop_duplicates('bike_number')
+a
